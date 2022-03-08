@@ -15,10 +15,9 @@ maintainers:
   - name: jessesuen
   - name: seanson
 dependencies:
-  - name: redis-ha
-    version: 4.12.17
-    repository: https://dandydeveloper.github.io/charts/
-    condition: redis-ha.enabled
+  - name: argo-cd
+    version: 3.35.2
+    repository: https://argoproj.github.io/argo-helm
 annotations:
   artifacthub.io/changes: |
     - "[Fixed]: Quote clusterResources value to avoid invalid Secret manifest"
